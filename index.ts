@@ -20,6 +20,10 @@ bot.command('fox', async (ctx) => {
   ctx.reply("https://api.tinyfox.dev" + buffer.loc);
 });
 
+bot.telegram.setMyCommands([
+  { command: "start", description: "Inicia el bot" },
+  { command: "fox", description: "Envia imagen de un zorro" }
+])
 
 bot.launch();
 console.log("Running bot")
