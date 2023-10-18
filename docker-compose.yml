@@ -1,7 +1,8 @@
 version: "3"
 services:
-  bot:
-    image: telegram-bot
+  pangolinbot:
+    container_name: pangolinbot
+    image: ghcr.io/tekofx/pangolinbot
     build: .
-    restart: always
+    restart: unless-stopped
     env_file: .env
