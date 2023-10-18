@@ -1,4 +1,4 @@
-# telegram-bot
+# pangolinbot
 
 To install dependencies:
 
