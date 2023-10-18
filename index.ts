@@ -15,13 +15,6 @@ bot.help((ctx) => {
   ctx.reply(text);
 })
 
-bot.on("text", (ctx) => {
-  const comandoEncontrado = commands.find(comando => comando.command === ctx.message.text);
-  if (!comandoEncontrado) {
-    ctx.reply("Este comando no existe, usa /help para ver mis comandos");
-  }
-})
-
 bot.command('hello', (ctx) => {
   ctx.reply('Hello!');
 });
