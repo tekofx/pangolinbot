@@ -1,0 +1,7 @@
+version: "3"
+services:
+  bot:
+    image: telegram-bot
+    build: .
+    restart: always
+    env_file: .env
